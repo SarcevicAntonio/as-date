@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Datepicker from '$lib/Datepicker.svelte';
+
+	let value;
+</script>
+
+<h1>as-date(picker)</h1>
+
+<input type="text" bind:value />
+<input type="date" bind:value />
+<Datepicker bind:value />
